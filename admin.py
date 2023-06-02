@@ -5,7 +5,6 @@ list_inst=[]
 def run_powershell_command(command):
     try:
         # Use subprocess to run PowerShell
-        #result = subprocess.run(['powershell', '-Command', command], capture_output=True, text=True)
         result = subprocess.run(['powershell', '-Command', command], capture_output=True, text=True)
         
         # Check for errors
@@ -20,7 +19,6 @@ def run_powershell_command(command):
         print("PowerShell is not available.")
         return None
 
-iplist=["","","",]
 ipconfig="ipconfig"#/ all"#| findstr DNS"    
 command = "Get-Process | Select-Object Name, CPU"
 get_cmds="Get-command"
